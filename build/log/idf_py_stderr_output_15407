@@ -1,0 +1,67 @@
+Command: /Users/mauro/.espressif/python_env/idf6.0_py3.14_env/bin/python /Users/mauro/Documents/Code/esp-idf/tools/idf_monitor.py -p /dev/cu.usbmodem21101 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c6 --revision 0 --decode-panic backtrace /Users/mauro/Documents/Code/minino-esp32-csi-node/build/minino-csi-node.elf /Users/mauro/Documents/Code/minino-esp32-csi-node/build/bootloader/bootloader.elf -m '/Users/mauro/.espressif/python_env/idf6.0_py3.14_env/bin/python' '/Users/mauro/Documents/Code/esp-idf/tools/idf.py' '-p' '/dev/cu.usbmodem21101'
+[0;33m--- esp-idf-monitor 1.9.0 on /dev/cu.usbmodem21101 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40806ae6: [0;33mrv_utils_wait_for_intr[0m[0m at [0;32m/COMPONENT_RISCV_DIR/include/riscv/rv_utils.h[0m[0m:[1;31m80[0m
+[0m--- (inlined by) [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32m/COMPONENT_ESP_HW_SUPPORT_DIR/cpu.c[0m[0m:[1;31m62[0m
+[0m--- 0x4086b910: [0;33mcall_start_cpu0[0m[0m at [0;32m/COMPONENT_MAIN_DIR/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4086e610: [0;33mis_xmc_chip_strict[0m[0m at [0;32m/COMPONENT_BOOTLOADER_DIR_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m925[0m
+[0m--- 0x4086b910: [0;33mcall_start_cpu0[0m[0m at [0;32m/COMPONENT_MAIN_DIR/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x408095cc: [0;33mpanic_abort[0m[0m at [0;32m/COMPONENT_ESP_SYSTEM_DIR/panic.c[0m[0m:[1;31m473[0m
+[0m--- 0x40809590: [0;33mesp_vApplicationTickHook[0m[0m at [0;32m/COMPONENT_ESP_SYSTEM_DIR/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40000000: [0;33m_start[0m[0m in [0;32mROM[0m
+[0m--- 0x40800001: [0;33m_vector_table[0m[0m at [0;32m/COMPONENT_RISCV_DIR/vectors_intc.S[0m[0m:[1;31m54[0m
+[0m
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/mauro/.espressif/python_env/idf6.0_py3.14_env/lib/python3.14/site-packages/esp_idf_monitor/__main__.py", line 4, in <module>
+    main()
+    ~~~~^^
+  File "/Users/mauro/.espressif/python_env/idf6.0_py3.14_env/lib/python3.14/site-packages/esp_idf_monitor/idf_monitor.py", line 529, in main
+    monitor.main_loop()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/Users/mauro/.espressif/python_env/idf6.0_py3.14_env/lib/python3.14/site-packages/esp_idf_monitor/idf_monitor.py", line 254, in main_loop
+    self._main_loop()
+    ~~~~~~~~~~~~~~~^^
+  File "/Users/mauro/.espressif/python_env/idf6.0_py3.14_env/lib/python3.14/site-packages/esp_idf_monitor/idf_monitor.py", line 384, in _main_loop
+    super()._main_loop()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/mauro/.espressif/python_env/idf6.0_py3.14_env/lib/python3.14/site-packages/esp_idf_monitor/idf_monitor.py", line 303, in _main_loop
+    self.serial_handler.handle_serial_input(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        data,
+        ^^^^^
+    ...<4 lines>...
+        self.check_gdb_stub_and_run,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/mauro/.espressif/python_env/idf6.0_py3.14_env/lib/python3.14/site-packages/esp_idf_monitor/base/serial_handler.py", line 229, in handle_serial_input
+    self.check_panic_decode_trigger(line_strip)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/mauro/.espressif/python_env/idf6.0_py3.14_env/lib/python3.14/site-packages/esp_idf_monitor/base/serial_handler.py", line 304, in check_panic_decode_trigger
+    out = self.panic_handler.process_panic_output(self._panic_buffer)
+  File "/Users/mauro/.espressif/python_env/idf6.0_py3.14_env/lib/python3.14/site-packages/esp_idf_panic_decoder/panic_output_decoder.py", line 45, in process_panic_output
+    output = subprocess.check_output(cmd, stderr=subprocess.STDOUT)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 473, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+               **kwargs).stdout
+               ^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 555, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 1990, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'riscv32-esp-elf-gdb'

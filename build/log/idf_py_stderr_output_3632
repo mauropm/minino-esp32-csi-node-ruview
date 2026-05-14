@@ -1,0 +1,23 @@
+Command: make -j 12 all
+Configuration Report               
+ ───────────────────────────────── 
+   Parser Version: 1               
+   Verbosity: default              
+   Defaults policy: sdkconfig      
+   Status: Finished successfully   
+                                   
+ ───────────────────────────────── 
+/Users/mauro/Documents/Code/minino-esp32-csi-node/main/mmwave_sensor.c: In function 'ld2410_process_frame':
+/Users/mauro/Documents/Code/minino-esp32-csi-node/main/mmwave_sensor.c:245:13: warning: unused variable 'data_type' [-Wunused-variable]
+  245 |     uint8_t data_type = data[0];   /* 0x02 = normal, 0x01 = engineering */
+      |             ^~~~~~~~~
+/Users/mauro/Documents/Code/minino-esp32-csi-node/main/swarm_bridge.c: In function 'swarm_task':
+/Users/mauro/Documents/Code/minino-esp32-csi-node/main/swarm_bridge.c:288:18: warning: unused variable 'presence' [-Wunused-variable]
+  288 |             bool presence = vit_valid && (vit.flags & 0x01);
+      |                  ^~~~~~~~
+/Users/mauro/Documents/Code/minino-esp32-csi-node/main/swarm_bridge.c:281:18: warning: unused variable 'free_heap' [-Wunused-variable]
+  281 |         uint32_t free_heap = esp_get_free_heap_size();
+      |                  ^~~~~~~~~
+/Users/mauro/Documents/Code/minino-esp32-csi-node/main/swarm_bridge.c:235:17: warning: unused variable 'fw_ver' [-Wunused-variable]
+  235 |     const char *fw_ver = app ? app->version : "unknown";
+      |                 ^~~~~~

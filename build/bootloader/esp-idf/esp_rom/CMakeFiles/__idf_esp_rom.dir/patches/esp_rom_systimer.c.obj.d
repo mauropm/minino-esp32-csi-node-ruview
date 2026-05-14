@@ -1,0 +1,34 @@
+esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_systimer.c.obj: \
+ /Users/mauro/Documents/Code/esp-idf/components/esp_rom/patches/esp_rom_systimer.c \
+ /Users/mauro/Documents/Code/minino-esp32-csi-node/build/bootloader/config/sdkconfig.h \
+ /Users/mauro/.espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/lib/gcc/riscv32-esp-elf/15.2.0/include/stddef.h \
+ /Users/mauro/Documents/Code/esp-idf/components/esp_rom/esp32c6/esp_rom_caps.h \
+ /Users/mauro/Documents/Code/esp-idf/components/hal/include/hal/systimer_hal.h \
+ /Users/mauro/.espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/picolibc/include/stdint.h \
+ /Users/mauro/Documents/Code/esp-idf/components/esp_libc/platform_include/sys/cdefs.h \
+ /Users/mauro/.espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/picolibc/include/sys/cdefs.h \
+ /Users/mauro/.espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/picolibc/include/sys/config.h \
+ /Users/mauro/.espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/picolibc/include/machine/ieeefp.h \
+ /Users/mauro/.espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/picolibc/include/sys/features.h \
+ /Users/mauro/.espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/picolibc/include/picolibc.h \
+ /Users/mauro/.espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/lib/gcc/riscv32-esp-elf/15.2.0/include/float.h \
+ /Users/mauro/.espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/picolibc/include/machine/_default_types.h \
+ /Users/mauro/.espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/picolibc/include/sys/_intsup.h \
+ /Users/mauro/.espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/picolibc/include/sys/_stdint.h \
+ /Users/mauro/.espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/lib/gcc/riscv32-esp-elf/15.2.0/include/stdbool.h \
+ /Users/mauro/Documents/Code/esp-idf/components/hal/include/hal/systimer_types.h \
+ /Users/mauro/Documents/Code/esp-idf/components/soc/esp32c6/include/soc/soc_caps.h \
+ /Users/mauro/Documents/Code/esp-idf/components/soc/include/soc/soc_caps_eval.h \
+ /Users/mauro/Documents/Code/esp-idf/components/esp_common/include/esp_assert.h \
+ /Users/mauro/Documents/Code/esp-idf/components/esp_libc/platform_include/assert.h \
+ /Users/mauro/.espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/picolibc/include/stdlib.h \
+ /Users/mauro/.espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/picolibc/include/machine/stdlib.h \
+ /Users/mauro/.espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/picolibc/include/alloca.h \
+ /Users/mauro/.espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/picolibc/include/sys/_locale.h \
+ /Users/mauro/.espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/picolibc/include/sys/_wait.h \
+ /Users/mauro/.espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/picolibc/include/assert.h \
+ /Users/mauro/Documents/Code/esp-idf/components/soc/esp32c6/include/soc/clk_tree_defs.h \
+ /Users/mauro/Documents/Code/esp-idf/components/hal/esp32c6/include/hal/systimer_ll.h \
+ /Users/mauro/Documents/Code/esp-idf/components/soc/esp32c6/register/soc/systimer_struct.h \
+ /Users/mauro/Documents/Code/esp-idf/components/soc/esp32c6/register/soc/pcr_struct.h \
+ /Users/mauro/Documents/Code/esp-idf/components/hal/platform_port/include/hal/assert.h

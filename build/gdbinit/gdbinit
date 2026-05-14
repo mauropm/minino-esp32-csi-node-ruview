@@ -1,0 +1,2 @@
+source /Users/mauro/Documents/Code/minino-esp32-csi-node/build/gdbinit/symbols
+source /Users/mauro/Documents/Code/minino-esp32-csi-node/build/gdbinit/connect

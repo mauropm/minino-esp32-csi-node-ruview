@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/__idf_main.dir/adaptive_controller.c.obj"
+  "CMakeFiles/__idf_main.dir/adaptive_controller.c.obj.d"
+  "CMakeFiles/__idf_main.dir/csi_collector.c.obj"
+  "CMakeFiles/__idf_main.dir/csi_collector.c.obj.d"
+  "CMakeFiles/__idf_main.dir/edge_processing.c.obj"
+  "CMakeFiles/__idf_main.dir/edge_processing.c.obj.d"
+  "CMakeFiles/__idf_main.dir/main.c.obj"
+  "CMakeFiles/__idf_main.dir/main.c.obj.d"
+  "CMakeFiles/__idf_main.dir/mmwave_sensor.c.obj"
+  "CMakeFiles/__idf_main.dir/mmwave_sensor.c.obj.d"
+  "CMakeFiles/__idf_main.dir/nvs_config.c.obj"
+  "CMakeFiles/__idf_main.dir/nvs_config.c.obj.d"
+  "CMakeFiles/__idf_main.dir/ota_update.c.obj"
+  "CMakeFiles/__idf_main.dir/ota_update.c.obj.d"
+  "CMakeFiles/__idf_main.dir/power_mgmt.c.obj"
+  "CMakeFiles/__idf_main.dir/power_mgmt.c.obj.d"
+  "CMakeFiles/__idf_main.dir/rv_feature_state.c.obj"
+  "CMakeFiles/__idf_main.dir/rv_feature_state.c.obj.d"
+  "CMakeFiles/__idf_main.dir/rv_mesh.c.obj"
+  "CMakeFiles/__idf_main.dir/rv_mesh.c.obj.d"
+  "CMakeFiles/__idf_main.dir/rv_radio_ops_esp32.c.obj"
+  "CMakeFiles/__idf_main.dir/rv_radio_ops_esp32.c.obj.d"
+  "CMakeFiles/__idf_main.dir/rvf_parser.c.obj"
+  "CMakeFiles/__idf_main.dir/rvf_parser.c.obj.d"
+  "CMakeFiles/__idf_main.dir/stream_sender.c.obj"
+  "CMakeFiles/__idf_main.dir/stream_sender.c.obj.d"
+  "CMakeFiles/__idf_main.dir/swarm_bridge.c.obj"
+  "CMakeFiles/__idf_main.dir/swarm_bridge.c.obj.d"
+  "CMakeFiles/__idf_main.dir/wasm_runtime.c.obj"
+  "CMakeFiles/__idf_main.dir/wasm_runtime.c.obj.d"
+  "CMakeFiles/__idf_main.dir/wasm_upload.c.obj"
+  "CMakeFiles/__idf_main.dir/wasm_upload.c.obj.d"
+  "libmain.a"
+  "libmain.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/__idf_main.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/mauro/Documents/Code/minino-esp32-csi-node/build/CMakeFiles/bootloader
+/Users/mauro/Documents/Code/minino-esp32-csi-node/build/CMakeFiles/bootloader.rule
+/Users/mauro/Documents/Code/minino-esp32-csi-node/build/CMakeFiles/bootloader-complete.rule
+/Users/mauro/Documents/Code/minino-esp32-csi-node/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/mauro/Documents/Code/minino-esp32-csi-node/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/mauro/Documents/Code/minino-esp32-csi-node/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/mauro/Documents/Code/minino-esp32-csi-node/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/mauro/Documents/Code/minino-esp32-csi-node/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/mauro/Documents/Code/minino-esp32-csi-node/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/mauro/Documents/Code/minino-esp32-csi-node/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

@@ -1,0 +1,117 @@
+Command: /Users/mauro/.espressif/python_env/idf6.0_py3.14_env/bin/python /Users/mauro/Documents/Code/esp-idf/tools/idf_monitor.py -p /dev/cu.usbmodem21101 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c6 --revision 0 --decode-panic backtrace /Users/mauro/Documents/Code/minino-esp32-csi-node/build/minino-csi-node.elf /Users/mauro/Documents/Code/minino-esp32-csi-node/build/bootloader/bootloader.elf -m '/Users/mauro/.espressif/python_env/idf6.0_py3.14_env/bin/python' '/Users/mauro/Documents/Code/esp-idf/tools/idf.py' '-p' '/dev/cu.usbmodem21101'
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0x6c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40806ae6
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875730,len:0x11f8
+load:0x4086b910,len:0xcc0
+load:0x4086e610,len:0x2f40
+entry 0x4086b910
+[0;32mI (245) cpu_start: Unicore app[0m
+[0;32mI (253) cpu_start: GPIO 17 and 16 are used as console UART I/O pins[0m
+[0;32mI (253) cpu_start: Pro cpu start user code[0m
+[0;32mI (254) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (255) app_init: Application information:[0m
+[0;32mI (259) app_init: Project name:     minino-csi-node[0m
+[0;32mI (264) app_init: App version:      1[0m
+[0;32mI (267) app_init: ELF file SHA256:  417b21f71...[0m
+[0;32mI (271) app_init: ESP-IDF:          v6.0.1-dirty[0m
+[0;32mI (276) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (279) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (283) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (287) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (294) heap_init: At 4082C070 len 000505A0 (321 KiB): RAM[0m
+[0;32mI (299) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (304) heap_init: At 50000024 len 00003FC4 (15 KiB): RTCRAM[0m
+[0;32mI (310) spi_flash: detected chip: gd[0m
+[0;32mI (313) spi_flash: flash io: dio[0m
+[0;32mI (316) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (322) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (341) main_task: Started on CPU0[0m
+[0;32mI (341) main_task: Calling app_main()[0m
+[0;32mI (343) minino_bsp: Initializing Minino BSP (flags=0x07)[0m
+[0;32mI (349) minino_bsp: Initializing I2C (SDA=1, SCL=2)[0m
+[0;33mW (353) i2c.master: Please note i2c asynchronous is only used for specific scenario currently. It's experimental for other users because user cannot get bus error from API. And It's not compatible with ``i2c_master_probe``. If user makes sure there won't be any error on bus and tested with no problem, this message can be ignored.[0m
+[0;32mI (382) minino_bsp: I2C initialized successfully[0m
+[0;32mI (386) minino_bsp: Initializing SPI (SCLK=4, MOSI=5, MISO=6)[0m
+[0;32mI (392) minino_bsp: SPI initialized successfully[0m
+[0;32mI (396) minino_bsp: Initializing UART (TX=3, RX=4, baud=9600)[0m
+[0;32mI (402) uart: ESP_INTR_FLAG_IRAM flag not set while CONFIG_UART_ISR_IN_IRAM is enabled, flag updated[0m
+[0;32mI (411) minino_bsp: UART initialized successfully[0m
+[0;32mI (415) minino_bsp: Initializing ADC for battery voltage[0m
+[0;32mI (420) minino_bsp: ADC1 initialized successfully[0m
+[0;32mI (424) minino_bsp: Minino BSP initialization complete[0m
+[0;32mI (546) nvs_config: No NVS config found, using compiled defaults[0m
+[0;32mI (546) main: Minino ESP32-C6 CSI Node (ADR-018) — v1 — Node ID: 1[0m
+[0;32mI (547) main: Target: Electronic Cats Minino (ESP32-C6)[0m
+[0;32mI (554) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (555) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (561) wifi:wifi driver task: 408361a8, prio:23, stack:6656, core=0[0m
+[0;32mI (574) wifi:wifi firmware version: b37c951[0m
+[0;32mI (574) wifi:wifi certification version: v7.0[0m
+[0;32mI (574) wifi:config NVS flash: enabled[0m
+[0;32mI (577) wifi:config nano formatting: disabled[0m
+[0;32mI (581) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1[0m
+[0;32mI (588) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (592) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (597) wifi:Init management short buffer num: 32[0m
+[0;32mI (601) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (605) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (609) wifi:Init static rx buffer size: 2212 (rxctrl:92, csi:512)[0m
+[0;32mI (615) wifi:Init static rx buffer num: 10[0m
+[0;32mI (619) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (623) wifi_init: rx ba win: 6[0m
+[0;32mI (625) wifi_init: accept mbox: 6[0m
+[0;32mI (628) wifi_init: tcpip mbox: 32[0m
+[0;32mI (631) wifi_init: udp mbox: 6[0m
+[0;32mI (634) wifi_init: tcp mbox: 6[0m
+[0;32mI (637) wifi_init: tcp tx win: 5760[0m
+[0;32mI (640) wifi_init: tcp rx win: 5760[0m
+[0;32mI (643) wifi_init: tcp mss: 1440[0m
+[0;32mI (646) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (650) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (654) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (658) phy_init: phy_version 343,b513b46,Nov 14 2025,16:34:12[0m
+[0;32mI (707) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (708) wifi:mode : sta (7c:2c:67:45:0b:1c)[0m
+[0;32mI (708) wifi:enable tsf[0m
+[0;32mI (712) main: WiFi STA initialized, connecting to SSID: wifi-densepose[0m
+[0;32mI (3119) main: Retrying WiFi connection (1/10)[0m
+[0;32mI (5526) main: Retrying WiFi connection (2/10)[0m
+[0;32mI (7933) main: Retrying WiFi connection (3/10)[0m
+[0;32mI (10340) main: Retrying WiFi connection (4/10)[0m
+[0;32mI (12747) main: Retrying WiFi connection (5/10)[0m
+[0;32mI (15154) main: Retrying WiFi connection (6/10)[0m
+[0;32mI (17561) main: Retrying WiFi connection (7/10)[0m
+[0;32mI (19968) main: Retrying WiFi connection (8/10)[0m
+[0;32mI (22375) main: Retrying WiFi connection (9/10)[0m
+[0;32mI (24781) main: Retrying WiFi connection (10/10)[0m
+[1;31mE (27188) main: Failed to connect to WiFi after 10 retries[0m
+[0;32mI (27188) stream_sender: UDP sender initialized: 192.168.1.100:5005[0m
+[0;33mW (27189) csi_collector: Late capture node_id=1 (no early set_node_id call)[0m
+[0;33mW (27195) wifi:Haven't to connect to a suitable AP now![0m
+[0;33mW (27200) csi_collector: Could not detect AP channel, using Kconfig default: 6[0m
+[0;32mI (27207) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (27211) csi_collector: WiFi modem sleep disabled (WIFI_PS_NONE) for CSI capture[0m
+[0;32mI (27218) wifi:ic_enable_sniffer[0m
+[0;32mI (27221) csi_collector: Promiscuous mode enabled (MGMT-only, RuView#396)[0m
+[0;32mI (27227) csi_collector: CSI collection initialized (node_id=1, channel=6)[0m
+[0;32mI (27234) edge_proc: Initializing edge processing (tier=2, top_k=8, vital_interval=1000ms, presence_thresh=0.000)[0m
+
+assert failed: xTaskCreatePinnedToCore freertos_tasks_c_additions.h:161 (( ( ( ( BaseType_t ) xCoreID ) >= 0 && ( ( BaseType_t ) xCoreID ) < 1 ) ? ( ( BaseType_t ) 1 ) : ( ( BaseType_t ) 0 ) ) == ( (
+Core  0 register dump:
+MEPC    : 0x408095cc  RA      : 0x40809590  SP      : 0x408300c0  GP      : 0x40818f44  
+TP      : 0x40830480  T0      : 0x79546573  T1      : 0x5f657079  T2      : 0x745f6570  
+S0/FP   : 0x0000007e  S1      : 0x408302a7  A0      : 0x40830118  A1      : 0x420d2bca  
+A2      : 0x203d3d20  A3      : 0x408301df  A4      : 0x00000001  A5      : 0x4082c000  
+A6      : 0x0000000c  A7      : 0x54657361  S2      : 0x00000000  S3      : 0x40830110  
+S4      : 0x40830118  S5      : 0x00000000  S6      : 0x00000005  S7      : 0x00000000  
+S8      : 0x40000000  S9      : 0x3f4ccccd  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x20292074  T4      : 0x20292031  T5      : 0x2028203a  T6      : 0x61422028  
+MSTATUS : 0x00001881  MTVEC   : 0x40800001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+

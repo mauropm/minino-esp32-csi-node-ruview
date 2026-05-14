@@ -1,0 +1,15 @@
+Command: cmake -G Unix Makefiles -B /Users/mauro/Documents/Code/minino-esp32-csi-node/build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/Users/mauro/.espressif/python_env/idf6.0_py3.14_env/bin/python -DESP_PLATFORM=1 -DIDF_TARGET=esp32c6 -DCCACHE_ENABLE=False /Users/mauro/Documents/Code/minino-esp32-csi-node
+info: /var/folders/_1/ttkk3fvj2_s1hp4_wdbyj5fr0000gn/T/kconfgen_tmput51wgxz:98 CONFIG_ADC_CAL_EFUSE_TP_ENABLE was replaced with CONFIG_ADC_CALI_EFUSE_TP_ENABLE
+Configuration Report                                                                                                                                               
+ ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
+   Parser Version: 1                                                                                                                                               
+   Verbosity: default                                                                                                                                              
+   Defaults policy: sdkconfig                                                                                                                                      
+   Status: Finished with notifications                                                                                                                             
+                                                                                                                                                                   
+  Disabled Symbols/Choices With User-Set Value                                                                                                                     
+   ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────   
+    * ADC_CALI_EFUSE_TP_ENABLE (defined at /Users/mauro/Documents/Code/esp-idf/components/esp_adc/Kconfig:22) with user-set value y from                           
+    /var/folders/_1/ttkk3fvj2_s1hp4_wdbyj5fr0000gn/T/kconfgen_tmput51wgxz                                                                                          
+   ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────   
+ ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 

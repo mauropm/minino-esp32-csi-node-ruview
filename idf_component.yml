@@ -1,0 +1,34 @@
+description: Minino ESP32-C6 CSI Node - WiFi sensing firmware for Electronic Cats Minino
+version: "1.0.0"
+url: https://github.com/ElectronicCats/Minino
+targets:
+  - esp32c6
+
+dependencies:
+  # ESP-IDF v6.x components
+  idf: ">=5.0"
+  
+  # WiFi and networking
+  esp_wifi: "^1.0.0"
+  esp_netif: "^1.0.0"
+  
+  # Storage
+  nvs_flash: "^1.0.0"
+  
+  # Event system
+  esp_event: "^1.0.0"
+  
+  # HTTP for OTA and WASM upload
+  esp_http_client: "^1.0.0"
+  esp_http_server: "^1.0.0"
+  
+  # ADC for battery monitoring
+  esp_adc: "^1.0.0"
+  
+  # Drivers
+  driver: "^1.0.0"
+  
+  # LVGL for display (optional)
+  # lvgl:
+  #   version: "^8.3.0"
+  #   public: true
